@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8081;
+const port = process.env.PORT || 8081; // ⚠️ Corrección
 
 // Middleware para parsear JSON
 app.use(express.json());
